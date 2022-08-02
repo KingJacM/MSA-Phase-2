@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "oceanic-bindery-356922",
+  "private_key_id": "689632b5ff9da401fdbaac9ae383ebb7c1c7c29a",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQChxd8/3MnbmFxW\nZYE1AaTUVK4j2tnLYqx938yyBrrpBInJM4X8vL4OXNl76nJHz5GL7GUPogOv0AZY\ncrnHYjwbU0HRZrDfMgVmmsp1c8UUYkdC45Va34ykLuEeJQz4Yu6XiBo1QApHpTHm\nsUpjh396Ws7akvrZU8XoTe+pERitcMIa8qds+7TiCbSTrjMT0HoyObeFtD/nRCM4\nBK7jAgWETL1KwjLuAABT4Ja/2Nuesgwt6TziTHxVjJVNOsptCgv++AiMjBC/wflr\nrfOoxL9d9kTbBdSi0P1vq2fFKRMRRhPoABnKF9F+bQfApy7YNLRum985brjd1Lb+\nWzquj3ddAgMBAAECggEAHJVFJlgA9INdoUhLBY4WTQvvPteOztBO8Oinlrb4tG5A\nWCP54xeILyp5pNreOVD0AviQPKxgIWLMlDklGRUC0MMrqG+QBcelS6VC63C6nCjn\nNWrXu1gvVd0Qmo5qVcLJLE34b3sytcj64atmnOJWhExiKx14JAkYuTx4AXPLW+19\nwvyd9bJsuGgYOckuQRHm8pijCoc3Z2BsuOYu6e7fCp2Wp0KLJ5vo7wDDbZnMsLUr\nqOZ4YPYt2bTG0mlbo5pLJlzYJCN23xJpSGAtiq2MgzeI1Jfg0EVlc5rsS5PfZrG5\n8/vn3z6RN2YoDbAzL4lUD6IGACCFmKKLOJTmNYfSMwKBgQDcOUAH+ojm8ZU5tGJP\nWi89P3ZL7EtUk6gndwA9uugoHWj9qVHuVQ+CjPFdoFEsbBH0/QzKQtyuFg/d87Fx\nA9p+2QiA9E6HcAvYZcKq0o07tUf/8tmz0csZU+L1Sn8nUdUMpACLSMWWQRFQ4601\nvs3+Q/0/Fqk7ni5EdNBOp9Ze4wKBgQC8DcAtHpWMjvlE2pm9+y08oLUf2n1+BbzP\nyPTLLZEERKQ0QPzmKNmp8Je7a3z6Rsen5b8G3qdEj8qzoaYh/3pIMJSwCq4njICW\nJ/0KAkmHM40jpH68pxn+TnfrveEohXXbESck75vGT59PiJ4d7+HLwX56PUR2OdJV\nxZ5cDJpkvwKBgHzJtA7RWGIE4pogLNTqNXpvS4kaDFWQlehG9kwEbSjOAYA7QcHb\nUT6Yvuxeu6CAXGyGN4kk+gdrWPJb9GAl3tmiAb+QsC7uvseQYg6J4J3Ey1etNM9A\nQeXIMwLrg8G0DRVsmSJTyiKqHDXJzYx24iMCQ65MGPk/WNhRmPf5AvAhAoGAEIFE\ndLFSftutlRV6mOoKtl+Ehh8vFHh8ceA5W/vL1owPvWZWy/yZ3gh3yMNOXMkJjPrl\nIT05gRL9v3ZYlnNN0DgzVKAbWO1D++nWk6JPwcYMhSxS00v3RBKvA8nOkTfleCyx\nOtSs32LtoJVlC0uajb+V0jS+ZYH9q/mERJ/2jRECgYAN8+WbgxrdUQfMIcUYIXpI\nibVJgoQpQSRvRMP1FmsQegI4WQAzmLo8RFCVfdphjgFUF9CS1GwT9TWfZ2ME2h6F\nYnMdgewoRECQ/EeBZ2mUj4IYC3M2YT57nBpl7pp+H4PQKh8LhKKuOJbhy8AXEzPg\nekBzcbz4IRLD45YOYqiEDw==\n-----END PRIVATE KEY-----\n",
+  "client_email": "speech-to-text@oceanic-bindery-356922.iam.gserviceaccount.com",
+  "client_id": "111634825559762013891",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/speech-to-text%40oceanic-bindery-356922.iam.gserviceaccount.com"
+}
