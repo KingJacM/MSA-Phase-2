@@ -11,6 +11,8 @@ Backend Fast API:
 If step 3 fails, a set up of python virtual enviroment maybe needed (venv folder is also uploaded to github)
 refer to https://fastapi.tiangolo.com/tutorial/ if any error regarding FastApi
 
+### A json key file is needed for verifying API usage, contact me if needed.
+
 google-cloud-speech only supports FLAC and some other audio types but not mp3, hence a conversion is needed. API only supports files < 60 seconds
 
 If there's any problems on running, start an issue.
