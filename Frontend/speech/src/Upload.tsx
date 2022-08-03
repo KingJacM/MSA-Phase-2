@@ -50,9 +50,9 @@ export default function Upload() {
     <>
     <div className="note">
     <h3>The simple Web app uses Google Speech API to convert FLC files to text</h3>
-    1. Find a audio file from https://audio-samples.github.io/
+    1. Find a audio file from <a href="https://audio-samples.github.io/">https://audio-samples.github.io/</a>
     <br></br>
-    2. convert to .FLC using any converter
+    2. convert to .FLC using any converter (eg. <a href="https://cloudconvert.com/mp3-to-flac">https://cloudconvert.com/mp3-to-flac</a>)
     <br></br>
     3. Select file, Upload and wait patiently
     <h4>Note: the file size will be limited, try with smaller size files to start with</h4>
