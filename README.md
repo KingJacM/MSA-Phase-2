@@ -3,6 +3,7 @@
 The google Speech-to-Text API requires a server side backend to run. Therefore a python FastAPI is created in order to assist.
 
 Frontend React is just navigate to `speech` folder and run `npm install` and `npm start`
+
 Backend Fast API:
 1. `pip install fastapi'
 2. `pip install google-cloud-speech'
