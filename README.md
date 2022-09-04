@@ -3,6 +3,7 @@
 The google Speech-to-Text API requires a server side backend to run. Therefore a python FastAPI is created in order to assist.
 
 Frontend React is just navigate to `speech` folder and run `npm install` and `npm start`
+
 Backend Fast API:
 1. `pip install fastapi'
 2. `pip install google-cloud-speech'
@@ -10,6 +11,8 @@ Backend Fast API:
 
 If step 3 fails, a set up of python virtual enviroment maybe needed (venv folder is also uploaded to github)
 refer to https://fastapi.tiangolo.com/tutorial/ if any error regarding FastApi
+
+### A json key file is needed for verifying API usage, contact me if needed.
 
 google-cloud-speech only supports FLAC and some other audio types but not mp3, hence a conversion is needed. API only supports files < 60 seconds
 
