@@ -1,6 +1,6 @@
 import React from "react";
 import "./Upload.css";
-import { Button } from "react-bootstrap";
+import { Button, ProgressBar } from "react-bootstrap";
 import axios from "axios";
 import { useState} from "react";
 import { Alert } from "react-bootstrap";
@@ -14,15 +14,22 @@ export default function Upload() {
   const [file, uploadFile] = useState<AxiosRequestConfig<FormData>|null|any>(null);
   const [submitted, updateSubmission] = useState<any|null>(null);
   const [loading, SetLoading] = useState(false);
+  const [singleProgress, setSingleProgress] = useState(0);
 
   async function handleSubmit() {
+    const bar = document.getElementById("progress-bar");
     const formdata = new FormData();
     formdata.append("file", file[0]);
 
-    const headers:AxiosRequestHeaders = { "Content-Type": file[0].type };
+    const headers:AxiosRequestHeaders = { "Access-Control-Allow-Origin":"*", "Content-Type": file[0].type};
     SetLoading(true);
+
     
-    axios.post("http://localhost:8000/files", formdata, headers)
+    
+    axios.post("https://speechtotextapplication320220810130715.azurewebsites.net/api/SpeechToText", formdata, {headers,onUploadProgress: (progressEvent) => {
+      const progress = (progressEvent.loaded / progressEvent.total) * 90;
+      setSingleProgress(progress);
+    },})
       .then(function (response: { data: string; }) {
         console.log(response)
         let msg = "";
@@ -31,14 +38,22 @@ export default function Upload() {
         
 
         updateSubmission(msg);
+        setSingleProgress(100);
         SetLoading(false);
       });
     }
     
-  
+  // const singleFileOptions = {
+  //     onUploadProgress: (progressEvent) => {
+  //         const {loaded, total} = progressEvent;
+  //         const percentage = Math.floor(((loaded / 1000) * 100) / (total / 1000));
+  //         setSingleProgress(percentage);
+  //     }
+  // }
 
   function handleChange(e: React.ChangeEvent<HTMLInputElement>) {
     uploadFile(e.target.files);
+    setSingleProgress(0);
   }
 
   function handleUpload() {
@@ -92,6 +107,9 @@ export default function Upload() {
           
           <div className="uploader-footer">Accepts formats: .flac</div>
         </div>
+      </div>
+      <div style={{width:"50vw",margin:"auto", marginTop:50}} id="progress" >
+        <ProgressBar now={singleProgress} label={`${singleProgress}%`} animated />
       </div>
       <br></br>
       <div id="alert" className="text-center mb-4">

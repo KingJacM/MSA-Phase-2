@@ -4,6 +4,8 @@
     margin-top: 100px;
 }
 
+
+
 .uploader {
     width: 350px;
     height: 250px;
@@ -84,4 +86,18 @@
     text-align: center;
     margin:50px;
     
+}
+
+@media (max-width:500px){
+    .uploader {
+        width: 250px;
+        height: 250px;
+        background-color: #fff;
+        border-radius: 20px;
+        box-shadow: 0 0 20px 10px #d3d3d3;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
