@@ -1,4 +1,6 @@
 # MSA-Phase-2
+
+check out live: https://fanciful-rolypoly-70164c.netlify.app/
  
 The google Speech-to-Text API requires a server side backend to run. Therefore a python FastAPI is created in order to assist.
 
