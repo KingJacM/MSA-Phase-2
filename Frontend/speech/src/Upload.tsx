@@ -23,12 +23,14 @@ export default function Upload() {
 
     const headers:AxiosRequestHeaders = { "Access-Control-Allow-Origin":"*", "Content-Type": file[0].type};
     SetLoading(true);
-
+    setSingleProgress(65);//hard coded, some bugs with onUploadProgress ocurred that does not return percentage - worked before
     
     
-    axios.post("https://speechtotextapplication320220810130715.azurewebsites.net/api/SpeechToText", formdata, {headers,onUploadProgress: (progressEvent) => {
+    
+    axios.post("https://speechtotextapplication320220810130715.azurewebsites.net/api/SpeechToText", formdata, {headers,onUploadProgress :(progressEvent) => {
       const progress = (progressEvent.loaded / progressEvent.total) * 90;
-      setSingleProgress(progress);
+      console.log(progressEvent)
+      
     },})
       .then(function (response: { data: string; }) {
         console.log(response)
